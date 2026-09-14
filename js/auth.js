@@ -206,7 +206,7 @@ if (formProfil) {
         };
 
         // Ako se e-mail promijenio, prvo pokušaj ažurirati auth e-mail.
-        const azurirajAuthEmail = (novoEmail !== user.email)
+        const azurirajAuthEmail = (noviEmail !== user.email)
             ? auth.currentUser.updateEmail(noviEmail).catch((err) => {
                 // Ako treba nedavno prijavljivanje, obavijesti korisnika
                 if (err && err.code === 'auth/requires-recent-login') {
