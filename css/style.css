@@ -665,7 +665,7 @@ button:nth-of-type(5):hover {
 
 .profil-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 500px));
+    grid-template-columns: minmax(0, 500px);
     gap: 40px;
     justify-content: center;
     max-width: 1100px;
@@ -703,62 +703,6 @@ button:nth-of-type(5):hover {
     background-color: purple;
     color: white;
     transition: 0.3s ease;
-}
-
-/*POVIJEST NARUDŽBI*/
-.povijest-narudzbi {
-    max-height: 500px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.narudzba-item {
-    background-color: white;
-    border-radius: 10px;
-    padding: 14px 16px;
-}
-
-.narudzba-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-    font-size: 14px;
-}
-
-.narudzba-datum {
-    opacity: 0.7;
-}
-
-.narudzba-status {
-    padding: 4px 10px;
-    border-radius: 20px;
-    background-color: rgb(221, 197, 241);
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.narudzba-status--gotovo {
-    background-color: #c9f2c9;
-    color: #1e6b1e;
-}
-
-.narudzba-status--poslano {
-    background-color: #cfe3fb;
-    color: #1e4f8a;
-}
-
-.narudzba-status--priprema {
-    background-color: #fdeecb;
-    color: #8a5a1e;
-}
-
-.narudzba-stavke {
-    list-style: none;
-    font-size: 14px;
-    line-height: 1.5;
 }
 
 /*FOOTER*/
