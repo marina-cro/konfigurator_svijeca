@@ -327,8 +327,6 @@ function naruci() {
             datum: firebase.firestore.FieldValue.serverTimestamp(),
             status: "Zaprimljeno"
         }).catch((err) => {
-            console.error("Greška pri spremanju narudžbe:", err);
-            prikaziObavijest("Greška pri spremanju narudžbe u povijest.", "greska");
         });
     } else {
         // Ako korisnik nije prijavljen, obavijesti ga da narudžba neće biti spremljena ali ce biti poslana mailom.
