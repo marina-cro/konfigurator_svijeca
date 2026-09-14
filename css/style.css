@@ -86,6 +86,14 @@ nav a {
     text-decoration: none;
     color: inherit;
     font-size: 22px;
+    padding: 4px, 10px;
+    border: 2px solid transparent; 
+    border-radius: 8px; 
+}
+
+/* OBRUB ZA TRENUTNO AKTIVNU STRANICU */
+nav a.active {
+    border-color: purple; 
 }
 
 /*KOŠARICA*/
